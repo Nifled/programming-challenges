@@ -1,11 +1,18 @@
+/*
 
+CHALLENGE DESCRIPTION:
+
+In this challenge you need to find the longest word in a sentence. If the 
+sentence has more than one word of the same length you should pick the first one. 
+
+*/
 package codeevalchallenges;
 
 /**
  *
  * @author Erick
  */
-public class LongestWord_easy { //challenge name goes here........
+public class LongestWord_easy { 
 
     /**
      * @param args the command line arguments
