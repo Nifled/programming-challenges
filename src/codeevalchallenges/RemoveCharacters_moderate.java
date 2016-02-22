@@ -46,12 +46,10 @@ public class RemoveCharacters_moderate {
             for (int j = 0; j < lettersToReplace.length; j++) {
 
                 if (lettersToRead[i] == lettersToReplace[j]) {
-                    lettersToRead[i] = '\0';
+                    lettersToRead[i] = '\0'; //replaces the character i with a null character ''
                     break;
                 }
-
             }
-
         }
         charArrayToString(lettersToRead);
     }
@@ -61,6 +59,5 @@ public class RemoveCharacters_moderate {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]);
         }
-        System.out.println("");
     }
 }
