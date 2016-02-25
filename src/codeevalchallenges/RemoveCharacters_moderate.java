@@ -20,7 +20,7 @@ public class RemoveCharacters_moderate {
         
         String line1 = "how are you, abc";
 
-        String line2 = "hello world, def";
+        String line2 = "e hegdelfin molina lopez sanches qlo, def";
         
         /*
         The way the strings are formatted are the way it 
@@ -48,16 +48,28 @@ public class RemoveCharacters_moderate {
                 if (lettersToRead[i] == lettersToReplace[j]) {
                     lettersToRead[i] = '\0'; //replaces the character i with a null character ''
                     break;
-                }
+                } 
             }
         }
-        charArrayToString(lettersToRead);
+        System.out.println(charArrayToString(lettersToRead));
     }
 
-    public static void charArrayToString(char[] array) { //prints a char array
+    public static String charArrayToString(char[] array) { //prints a char array
 
+        String output = "";
+        String abc = "abcdefghijklmnopqrstuvwxyz";
+        
+        int temp = 0;
+        int start = 0;
         for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]);
+            output += array[i];
+            if (abc.contains(Character.toString(array[i])) && temp == 0) { 
+                start = i; //gets the real starting point so output wont start with ' '(space)
+                temp++;
+            }
         }
+        String last = output.substring(start);
+        return last;
     }
+    
 }
