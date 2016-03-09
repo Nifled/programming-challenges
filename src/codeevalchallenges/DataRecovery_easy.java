@@ -43,11 +43,7 @@ public class DataRecovery_easy {
             
             if (result[i] == null) {
                 
-                /* 
-                Here is the problem!!! The line isn't correct
-                and I'm very aware of it. Will fix soon.
-                */
-                output[i] = result[i]; //******************
+                output[i] = result[i];
                 
             } else {
                 
