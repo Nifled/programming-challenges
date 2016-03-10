@@ -30,46 +30,29 @@ public class RemoveCharacters_moderate {
         with scanner, bufferedreader (for console input)
         */        
         
-        splitAndRemove(line1);
-        splitAndRemove(line2);
+        removeChars(line1);
+        removeChars(line2);
 
     }
 
-    public static void splitAndRemove(String x) { //splits input sentence and characters and removes characters in sentence
+    public static void removeChars(String x) { //splits input sentence and characters and removes characters in sentence
 
-        String[] seperate = x.split(", ");
-        char[] lettersToRead = seperate[0].toCharArray();
-        char[] lettersToReplace = seperate[1].toCharArray();
-
-        for (int i = 0; i < lettersToRead.length; i++) {
-
-            for (int j = 0; j < lettersToReplace.length; j++) {
-
-                if (lettersToRead[i] == lettersToReplace[j]) {
-                    lettersToRead[i] = '\0'; //replaces the character i with a null character ''
-                    break;
-                } 
-            }
-        }
-        System.out.println(charArrayToString(lettersToRead));
-    }
-
-    public static String charArrayToString(char[] array) { //prints a char array
-
-        String output = "";
-        String abc = "abcdefghijklmnopqrstuvwxyz";
+        String[] seperator = x.split(", ");
         
-        int temp = 0;
-        int start = 0;
-        for (int i = 0; i < array.length; i++) {
-            output += array[i];
-            if (abc.contains(Character.toString(array[i])) && temp == 0) { 
-                start = i; //gets the real starting point so output wont start with ' '(space)
-                temp++;
+        String words = seperator[0];
+        String lettersToRemove = seperator[1];
+        
+        String output = ""; 
+        
+        for (int i = 0; i < words.length(); i++) {
+            
+            String currentChar = words.charAt(i) + "";
+            
+            if (!(lettersToRemove.contains(currentChar))) {
+                output += currentChar;
             }
+            
         }
-        String last = output.substring(start);
-        return last;
+        System.out.println(output.trim());
     }
-    
 }
