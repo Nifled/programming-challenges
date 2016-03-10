@@ -11,8 +11,6 @@ However, it was not implemented until 1998 and 2000
  */
 package codeevalchallenges;
 
-import java.util.Arrays;
-
 /**
  *
  * @author Erick
@@ -31,6 +29,8 @@ public class DataRecovery_easy {
         int count = 0;
         String[] result = new String[arraySentence.length];
         
+        //Creates array with the words from line with 
+        //'null' where there is no number position
         for (int i = 0; i < arrayNumbers.length; i++) {
             
             result[i] = arraySentence[count];
@@ -39,25 +39,22 @@ public class DataRecovery_easy {
         
         String[] output = new String[arraySentence.length];
       
+        //Orders the words in their respective number position
         for (int i = 0; i < arrayNumbers.length; i++) {
             
-            if (result[i] == null) {
-                
-                /* 
-                Here is the problem!!! The line isn't correct
-                and I'm very aware of it. Will fix soon.
-                */
-                output[i] = result[i]; //******************
-                
-            } else {
-                
                 output[(Integer.parseInt(arrayNumbers[i])-1)] = result[i];
-            }
         }
         
+        //Prints the output array
         for (String word : output) {
+            
+            if (word == null) {
+                word = arraySentence[arraySentence.length-1];
+                }
+            
             System.out.print(word + " ");
         }
+        System.out.println("");
     }
     
 }
