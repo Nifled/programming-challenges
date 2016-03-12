@@ -5,7 +5,7 @@ CHALLENGE DESCRIPTION:
 Write a program which determines the largest prime palindrome less than 1000.
 
  */
-package codeevalchallenges;
+package codeevalchallenges.Easy;
 
 import static java.lang.Math.sqrt;
 

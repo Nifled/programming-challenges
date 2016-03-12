@@ -10,7 +10,7 @@ it’s 0, leave it as it is. Words are always in lower case and in the same row 
 the binary mask.
 
  */
-package codeevalchallenges;
+package codeevalchallenges.Easy;
 
 /**
  *

@@ -8,7 +8,7 @@ EXAMPLE:
 input: Hello World
 output: World Hello
  */
-package codeevalchallenges;
+package codeevalchallenges.Easy;
 
 /**
  *

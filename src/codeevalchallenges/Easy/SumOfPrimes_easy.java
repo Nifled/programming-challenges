@@ -6,7 +6,7 @@ CHALLENGE DESCRIPTION:
 
 Write a program which determines the sum of the first 1000 prime numbers.
  */
-package codeevalchallenges;
+package codeevalchallenges.Easy;
 
 /**
  *

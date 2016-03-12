@@ -7,7 +7,7 @@ solution should run in N*(log(N)) time or better. You may assume that N is alway
 a positive integer.
 
  */
-package codeevalchallenges;
+package codeevalchallenges.Moderate;
 
 import static java.lang.Math.sqrt;
 import java.util.*;

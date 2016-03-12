@@ -18,7 +18,7 @@ Score: 90/100
 
  output: 1,4;2,3
  */
-package codeevalchallenges;
+package codeevalchallenges.Moderate;
 
 /**
  *

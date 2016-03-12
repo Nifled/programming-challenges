@@ -9,7 +9,7 @@ For example:
 output: 
 However, it was not implemented until 1998 and 2000
  */
-package codeevalchallenges;
+package codeevalchallenges.Easy;
 
 /**
  *

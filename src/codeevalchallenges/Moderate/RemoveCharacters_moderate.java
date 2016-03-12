@@ -8,7 +8,7 @@
  Output example: how re you
 
  */
-package codeevalchallenges;
+package codeevalchallenges.Moderate;
 
 /**
  *
