@@ -5,4 +5,4 @@
 
 line = "HELLO CODEEVAL" #Example
 
-print(line.lower())
+print(line.rstrip().lower())
