@@ -1,3 +1,6 @@
+# https://www.codeeval.com/open_challenges/1/
+# Fizz Buzz
+
 # Write a program that prints out the final series of numbers 
 # where those divisible by X, Y and both are replaced by “F” 
 # for fizz, “B” for buzz and “FB” for fizz buzz.
