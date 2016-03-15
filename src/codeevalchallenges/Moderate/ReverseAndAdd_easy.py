@@ -18,12 +18,9 @@ def reverseAdd(stringNumber):
 	else :
 		reverseAdd(str(suma)) # Call recursive method
 		pass
-	pass
-
-line = "195" #Example
 
 totalIterations = 0
-
+line = "195" #Example
 reverseAdd(line)
 
 #Code runs perfectly. Apparently, CodeEval doesn't understand it, so f u CodeEval
