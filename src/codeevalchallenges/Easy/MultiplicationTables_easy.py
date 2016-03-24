@@ -8,5 +8,5 @@
 limit = 12
 for x in range(1,limit+1):
 	for y in range(1,limit+1):
-		print('{:4}'.format(x*y), end="")
+		print('{:4}'.format(x*y), end="") #The {} give it the 4 space format that codeeval wants
 	print("")
