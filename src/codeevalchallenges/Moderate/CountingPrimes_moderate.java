@@ -11,7 +11,7 @@ package codeevalchallenges.Easy;
  *
  * @author Erick
  */
-public class CountingPrimes {
+public class CountingPrimes_moderate {
 
     public static void main(String[] args) {
         
