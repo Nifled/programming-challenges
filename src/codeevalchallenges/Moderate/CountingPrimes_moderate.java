@@ -5,7 +5,7 @@ CHALLENGE DESCRIPTION:
 Given two integers N and M, count the number of prime numbers 
 between N and M (both inclusive)
  */
-package codeevalchallenges.Easy;
+package codeevalchallenges.Moderate;
 
 /**
  *
