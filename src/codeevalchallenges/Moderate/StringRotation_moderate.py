@@ -2,7 +2,6 @@
 # String Rotation
 
 # CHALLENGE DESCRIPTION:
-# value_when_true if condition else value_when_false
 
 # You are given two strings. Determine if the second 
 # string is a rotation of the first string.

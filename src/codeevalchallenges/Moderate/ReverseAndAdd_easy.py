@@ -5,22 +5,13 @@
 # digits and add it to the original. If the sum is not a 
 # palindrome (which means, it is not the same number from 
 # left to right and right to left), repeat this procedure.
-
-def reverseAdd(stringNumber):
-	global totalIterations
-	totalIterations += 1
-
-	suma = int(stringNumber) + int(str(stringNumber)[::-1])
-	reversedSuma = int(str(suma)[::-1])
-
-	if suma == reversedSuma:
-		print(totalIterations, suma)
-	else :
-		reverseAdd(str(suma)) # Call recursive method
-		pass
-
-totalIterations = 0
-line = "195" #Example
-reverseAdd(line)
-
-#Code runs perfectly. Apparently, CodeEval doesn't understand it, so f u CodeEval
+test = "195" #Example
+totalReps = 0
+temp = int(test)
+while True:
+	totalReps += 1
+	suma = temp + int(str(temp)[::-1])
+	temp = suma
+	if suma == int(str(suma)[::-1]):
+		print(totalReps, suma)
+		break
