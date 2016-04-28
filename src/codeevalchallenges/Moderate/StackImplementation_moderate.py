@@ -28,4 +28,4 @@ result = []
 for x in range(len(NumsToStack)):
 	stack.push(NumsToStack[x])
 	if x%2 == 0: result.append(stack.pop())
-print(' '.join(map(str, result)))
+print(' '.join(result))
