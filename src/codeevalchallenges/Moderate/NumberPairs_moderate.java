@@ -18,45 +18,12 @@ Score: 90/100
 
  output: 1,4;2,3
  */
-package codeevalchallenges.Moderate;
-
-/**
- *
- * @author Erick
- */
-public class NumberPairs_moderate {
-
-    public static void main(String[] args) {
-
-        String line = "1,2,3,4,6;5";
-        String[] parts = line.split(";");
-
-        String[] numbers = parts[0].split(",");
-        int n = numbers.length;
-
-        int sum = Integer.parseInt(parts[1]);
-        String output = "";
-
-        //iterates through numbers
-        for (int i = 0; i < n; i++) {
-
-            for (int j = n - 1; j >= i; j--) {
-
-                int x = Integer.parseInt(numbers[i]);
-                int y = Integer.parseInt(numbers[j]);
-
-                if (x + y == sum) {
-                    output += Integer.toString(x) + "," + Integer.toString(y) + ";";
-                }
-            }
-        }
-        
-        //checks to see if there are actually numbers that equal the sum
-        if (output.length() == 0) {
-            System.out.println("NULL");
-        } else {
-            System.out.println(output.substring(0, output.length()-1));
-        }
-    }
-
-}
+test = "2,4,5,6,9,11,15;20"
+nums = test.strip().split(';')[0].split(',')
+suma = int(test.strip().split(';')[1])
+result = ''
+for x in range(len(nums)):
+    for y in range(x+1,len(nums)):
+        if int(nums[x]) + int(nums[y]) == suma:
+            result += nums[x] + ',' + nums[y] + ';'
+print('NULL' if not result else result[:-1])
