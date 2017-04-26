@@ -1,12 +1,11 @@
-# codeeval-challenges
+# programming-challenges
 
-  These are my versions of the challenges that are provided on [Codeeval](https://www.codeeval.com/open_challenges/). The challenges are located in /src directory.
+These are my solutions to some of the challenges that are provided on different sites like [Hackerrank](https://www.hackerrank.com/), [Codewars](https://www.codewars.com/), and [Codeeval](https://www.codeeval.com/). The challenges are located in their corresponding `/<site_name>` directory.
 
-  The languages I currently work on with the challenges are:
+The languages I currently work on with the challenges are:
 
-  	Python
-  	Java
-  
-  You are welcome to make any suggestions (as I'm not an expert) and to use my code to help you better understand pretty much whatever the content is related to. 
+* `Python`
+* `Javascript`
+* `Java`
 
-  NOTE: All the code that is pushed to this repo is NOT in the test-case/input format that CodeEval accepts. This is to make it easier to read. 
+You are welcome to make any suggestions (I'm no expert) and to use my code to help you better understand pretty much whatever the content is related to. 
