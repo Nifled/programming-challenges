@@ -7,5 +7,6 @@ The languages I currently work on with the challenges are:
 * `Python`
 * `Javascript`
 * `Java`
+* `Go`
 
 You are welcome to make any suggestions (I'm no expert) and to use my code to help you better understand pretty much whatever the content is related to. 
