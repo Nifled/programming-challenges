@@ -22,12 +22,7 @@ function addTwoNumbers(
   const placeTotal = digitSum % 10; // if `digitSum` is > 10, this will be a remainder and carry over
   const carry = Math.floor(digitSum / 10); // EG: `digitSum` = 18. carry is 1 and remainder is 8
 
-  if (!l1?.next && !l2?.next) {
-    // if last `digitSum` is > 10, create two final nodes for each digit.
-    // EG: `digitSum` = 18, last nodes will look like (8)->(1)
-    if (digitSum >= 10) {
-      return new ListNode(placeTotal, new ListNode(1));
-    }
+  if (!l1?.next && !l2?.next && carry === 0) {
     return new ListNode(digitSum);
   }
 
